@@ -1,24 +1,428 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tEc-Uo-O0f">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="L1v-VW-Qjp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="MainVC" id="tEc-Uo-O0f" customClass="ViewController" customModule="UmcProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xT6-i4-ZuA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tis-8s-bkd">
+                                <rect key="frame" x="10" y="220" width="373" height="78"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="집콕러세요? 30% 쿠폰 드려요!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ppP-UG-Rt5">
+                                        <rect key="frame" x="31" y="18" width="261" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="아이콘5.png" translatesAutoresizingMaskIntoConstraints="NO" id="iBh-9y-YyR">
+                                        <rect key="frame" x="261" y="0.0" width="112" height="99"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dW3-HA-VQn">
+                                <rect key="frame" x="10" y="323" width="110" height="116"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="알뜰배달" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P2h-wE-j9k">
+                                        <rect key="frame" x="8" y="8" width="76" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="쿠폰 골라 받기" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JJA-Ic-bb6">
+                                        <rect key="frame" x="8" y="35" width="94" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="아이콘 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-Wc-3sX">
+                                        <rect key="frame" x="-4" y="44" width="136" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HM-oX-yTk">
+                                <rect key="frame" x="138" y="323" width="111" height="116"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="배달" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xMR-ff-obN">
+                                        <rect key="frame" x="8" y="8" width="96" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="세상은 넓고 맛집은 많다" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="asr-4u-flj">
+                                        <rect key="frame" x="8" y="33" width="85" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="아이콘 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="WJ6-EU-jWg">
+                                        <rect key="frame" x="36" y="55" width="90" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUh-Z0-PzG">
+                                <rect key="frame" x="10" y="464" width="373" height="180"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="인기상품" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ufl-eY-oaH">
+                                        <rect key="frame" x="15" y="89" width="52" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 1png.png" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-4e-WyP">
+                                        <rect key="frame" x="8" y="42" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="신상품" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lFm-7Z-0nx">
+                                        <rect key="frame" x="90" y="89" width="52" height="29.333333333333329"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 5.png" translatesAutoresizingMaskIntoConstraints="NO" id="URa-VZ-cvC">
+                                        <rect key="frame" x="83" y="42" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="특가" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Se1-jz-zC0">
+                                        <rect key="frame" x="160" y="89" width="52" height="29.333333333333329"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 4.png" translatesAutoresizingMaskIntoConstraints="NO" id="p7h-Pf-3su">
+                                        <rect key="frame" x="153" y="42" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="쌀ㆍ잡곡" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7gl-tC-uAQ">
+                                        <rect key="frame" x="235" y="89" width="52" height="29.333333333333329"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 3.png" translatesAutoresizingMaskIntoConstraints="NO" id="AyP-CD-RMD">
+                                        <rect key="frame" x="228" y="42" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="화장지" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7VX-Hu-0yp">
+                                        <rect key="frame" x="310" y="89" width="52" height="29.333333333333329"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 9.png" translatesAutoresizingMaskIntoConstraints="NO" id="ssG-oZ-zya">
+                                        <rect key="frame" x="303" y="42" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="대용량특가" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dpf-uw-8Vk">
+                                        <rect key="frame" x="14" y="8" width="92" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="많이 살수록 더 저렴하죠" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bdF-Pg-jGW">
+                                        <rect key="frame" x="99" y="11" width="160" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 8.png" translatesAutoresizingMaskIntoConstraints="NO" id="q6M-9U-O0m">
+                                        <rect key="frame" x="303" y="110" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="헤어ㆍ바디" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W23-hE-Je5">
+                                        <rect key="frame" x="231" y="153" width="60" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 10.png" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-Ml-5j9">
+                                        <rect key="frame" x="228" y="110" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="통조림" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ix5-qb-V9a">
+                                        <rect key="frame" x="160" y="155" width="50" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 6 .png" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-gs-w7y">
+                                        <rect key="frame" x="150" y="110" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="즉석밥" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rq2-Rf-wbG">
+                                        <rect key="frame" x="90" y="153" width="52" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kf8-jP-vyZ">
+                                        <rect key="frame" x="83" y="110" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="생수ㆍ음료" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pM7-Jv-oYz">
+                                        <rect key="frame" x="11" y="153" width="60" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="동그라미 7.png" translatesAutoresizingMaskIntoConstraints="NO" id="yiO-ZM-Zba">
+                                        <rect key="frame" x="8" y="110" width="67" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="건강식품" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3gL-Zo-hcs">
+                                        <rect key="frame" x="310" y="154" width="52" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azA-d9-zHR">
+                                <rect key="frame" x="267" y="323" width="116" height="116"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="배민스토어" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xm7-ob-HI7">
+                                        <rect key="frame" x="8" y="8" width="96" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dy1-Gb-1Yx">
+                                        <rect key="frame" x="8" y="51" width="72" height="32.333333333333343"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="옵니다">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="labelColor"/>
+                                                    <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="94a-it-DWP">
+                                        <rect key="frame" x="8" y="34" width="78" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="배달은">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="labelColor"/>
+                                                    <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="labelColor"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="지금">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="labelColor"/>
+                                                    <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="아이콘 4.png" translatesAutoresizingMaskIntoConstraints="NO" id="1bx-Q1-tDw">
+                                        <rect key="frame" x="43" y="55" width="90" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="광고배너.png" translatesAutoresizingMaskIntoConstraints="NO" id="tHm-0t-hZa">
+                                <rect key="frame" x="-1" y="652" width="389" height="132"/>
+                            </imageView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aMQ-pI-sdk">
+                                <rect key="frame" x="0.0" y="792" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="more" id="efp-bB-KEi"/>
+                                </items>
+                            </tabBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wp-gt-m8P">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-ma-XXG">
+                                        <rect key="frame" x="39.999999999999993" y="80" width="68.333333333333314" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="우리집"/>
+                                    </button>
+                                    <searchBar contentMode="redraw" text="찾는 맛집 이름이 뭐예요?" translatesAutoresizingMaskIntoConstraints="NO" id="Hfp-Nl-XzC">
+                                        <rect key="frame" x="10" y="120" width="373" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                        <connections>
+                                            <outlet property="delegate" destination="tEc-Uo-O0f" id="FjF-ly-oDn"/>
+                                        </connections>
+                                    </searchBar>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="맨 위 아이콘 3.png" translatesAutoresizingMaskIntoConstraints="NO" id="nET-ct-RI5">
+                                        <rect key="frame" x="326" y="80" width="49" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="맨 위 아이콘 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="RqI-Wr-iFB">
+                                        <rect key="frame" x="286" y="80" width="48" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="맨 위 아이콘 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="4ia-wi-PJ3">
+                                        <rect key="frame" x="242" y="80" width="52" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="mainColor"/>
+                                <constraints>
+                                    <constraint firstItem="Hfp-Nl-XzC" firstAttribute="top" secondItem="yhJ-ma-XXG" secondAttribute="bottom" constant="5" id="24g-Qa-ICo"/>
+                                    <constraint firstItem="Hfp-Nl-XzC" firstAttribute="leading" secondItem="7wp-gt-m8P" secondAttribute="leading" constant="10" id="2PW-R9-bP5"/>
+                                    <constraint firstItem="yhJ-ma-XXG" firstAttribute="leading" secondItem="7wp-gt-m8P" secondAttribute="leading" constant="40" id="Iyd-jv-pcE"/>
+                                    <constraint firstItem="yhJ-ma-XXG" firstAttribute="top" secondItem="7wp-gt-m8P" secondAttribute="top" constant="80" id="cSC-l4-Vd4"/>
+                                    <constraint firstAttribute="height" constant="200" id="heH-3g-pS2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hfp-Nl-XzC" secondAttribute="trailing" constant="10" id="m1f-NX-VuV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ao4-uu-h3X"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="vUh-Z0-PzG" firstAttribute="leading" secondItem="ao4-uu-h3X" secondAttribute="leading" constant="10" id="2UC-LC-9fc"/>
+                            <constraint firstItem="ao4-uu-h3X" firstAttribute="trailing" secondItem="tHm-0t-hZa" secondAttribute="trailing" constant="4" id="6q9-Ju-F8x"/>
+                            <constraint firstItem="dW3-HA-VQn" firstAttribute="leading" secondItem="ao4-uu-h3X" secondAttribute="leading" constant="10" id="DwL-GR-JGU"/>
+                            <constraint firstItem="tHm-0t-hZa" firstAttribute="leading" secondItem="ao4-uu-h3X" secondAttribute="leading" id="F7k-6N-rYX"/>
+                            <constraint firstItem="vUh-Z0-PzG" firstAttribute="top" secondItem="dW3-HA-VQn" secondAttribute="bottom" constant="25" id="Fcw-CV-JaP"/>
+                            <constraint firstItem="ao4-uu-h3X" firstAttribute="bottom" secondItem="tis-8s-bkd" secondAttribute="bottom" constant="520" id="H9L-g2-tqW"/>
+                            <constraint firstItem="7wp-gt-m8P" firstAttribute="leading" secondItem="ao4-uu-h3X" secondAttribute="leading" id="K52-xK-AjV"/>
+                            <constraint firstItem="8HM-oX-yTk" firstAttribute="leading" secondItem="xT6-i4-ZuA" secondAttribute="leading" constant="138" id="Kxn-w0-IYi"/>
+                            <constraint firstItem="vUh-Z0-PzG" firstAttribute="top" secondItem="azA-d9-zHR" secondAttribute="bottom" constant="25" id="LW8-mM-wLz"/>
+                            <constraint firstItem="8HM-oX-yTk" firstAttribute="leading" secondItem="dW3-HA-VQn" secondAttribute="trailing" constant="18" id="LXK-gv-ah1"/>
+                            <constraint firstItem="7wp-gt-m8P" firstAttribute="trailing" secondItem="ao4-uu-h3X" secondAttribute="trailing" id="NrR-o1-bzo"/>
+                            <constraint firstItem="azA-d9-zHR" firstAttribute="leading" secondItem="xT6-i4-ZuA" secondAttribute="leading" constant="267" id="PfG-ss-jbH"/>
+                            <constraint firstItem="7wp-gt-m8P" firstAttribute="top" secondItem="xT6-i4-ZuA" secondAttribute="top" id="Qnm-1z-4ut"/>
+                            <constraint firstItem="ao4-uu-h3X" firstAttribute="bottom" secondItem="tHm-0t-hZa" secondAttribute="bottom" constant="60" id="TDk-JJ-txx"/>
+                            <constraint firstItem="azA-d9-zHR" firstAttribute="top" secondItem="tis-8s-bkd" secondAttribute="bottom" constant="25" id="UDy-EW-XWN"/>
+                            <constraint firstItem="ao4-uu-h3X" firstAttribute="trailing" secondItem="tHm-0t-hZa" secondAttribute="trailing" id="Vba-qQ-b1h"/>
+                            <constraint firstItem="ao4-uu-h3X" firstAttribute="bottom" secondItem="vUh-Z0-PzG" secondAttribute="bottom" constant="174" id="WrO-yb-DT1"/>
+                            <constraint firstItem="azA-d9-zHR" firstAttribute="leading" secondItem="8HM-oX-yTk" secondAttribute="trailing" constant="18" id="Z2F-Q3-9Fv"/>
+                            <constraint firstItem="ao4-uu-h3X" firstAttribute="trailing" secondItem="vUh-Z0-PzG" secondAttribute="trailing" constant="10" id="aDf-vL-9Sx"/>
+                            <constraint firstItem="tis-8s-bkd" firstAttribute="leading" secondItem="ao4-uu-h3X" secondAttribute="leading" constant="10" id="aqe-iv-Ll0"/>
+                            <constraint firstItem="tHm-0t-hZa" firstAttribute="leading" secondItem="ao4-uu-h3X" secondAttribute="leading" constant="4" id="dMA-KV-Fmq"/>
+                            <constraint firstItem="tHm-0t-hZa" firstAttribute="leading" secondItem="ao4-uu-h3X" secondAttribute="leading" constant="2" id="ekM-Vs-Uqt"/>
+                            <constraint firstItem="8HM-oX-yTk" firstAttribute="top" secondItem="tis-8s-bkd" secondAttribute="bottom" constant="25" id="fxf-tF-0y8"/>
+                            <constraint firstItem="dW3-HA-VQn" firstAttribute="top" secondItem="tis-8s-bkd" secondAttribute="bottom" constant="25" id="jvJ-zb-GTJ"/>
+                            <constraint firstAttribute="bottom" secondItem="dW3-HA-VQn" secondAttribute="bottom" constant="413" id="krY-id-vEz"/>
+                            <constraint firstItem="ao4-uu-h3X" firstAttribute="trailing" secondItem="azA-d9-zHR" secondAttribute="trailing" constant="10" id="l9u-17-8TR"/>
+                            <constraint firstItem="ao4-uu-h3X" firstAttribute="trailing" secondItem="tHm-0t-hZa" secondAttribute="trailing" constant="2" id="lvM-0a-DRE"/>
+                            <constraint firstItem="tis-8s-bkd" firstAttribute="top" secondItem="7wp-gt-m8P" secondAttribute="bottom" constant="20" id="mmA-gG-5SX"/>
+                            <constraint firstItem="vUh-Z0-PzG" firstAttribute="top" secondItem="8HM-oX-yTk" secondAttribute="bottom" constant="25" id="piG-Ye-Tgl"/>
+                            <constraint firstItem="tHm-0t-hZa" firstAttribute="top" secondItem="vUh-Z0-PzG" secondAttribute="bottom" constant="25" id="qUv-FW-78T"/>
+                            <constraint firstItem="ao4-uu-h3X" firstAttribute="trailing" secondItem="tis-8s-bkd" secondAttribute="trailing" constant="10" id="tYu-vv-Osg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="MyHome" destination="yhJ-ma-XXG" id="RMG-bC-ZoV"/>
+                        <outlet property="SB" destination="Hfp-Nl-XzC" id="1tT-gg-hJz"/>
+                        <outlet property="UIbar" destination="7wp-gt-m8P" id="HgC-nD-add"/>
+                        <outlet property="coupon" destination="tis-8s-bkd" id="dc5-wl-8fq"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ls-0E-4UE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-393.12977099236639" y="-127.46478873239437"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="광고배너.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 10.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 1png.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 2.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 3.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 4.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 5.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 6 .png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 7.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 8.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="동그라미 9.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="맨 위 아이콘 1.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="맨 위 아이콘 2.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="맨 위 아이콘 3.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="아이콘 1.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="아이콘 2.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="아이콘 4.png" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="아이콘5.png" width="595.20001220703125" height="841.91998291015625"/>
+        <namedColor name="mainColor">
+            <color red="0.28200000524520874" green="0.81999999284744263" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

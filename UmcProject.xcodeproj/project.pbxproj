@@ -13,6 +13,24 @@
 		CA231EFC2ABD73A600C3F983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA231EFA2ABD73A600C3F983 /* Main.storyboard */; };
 		CA231EFE2ABD73A900C3F983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA231EFD2ABD73A900C3F983 /* Assets.xcassets */; };
 		CA231F012ABD73A900C3F983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA231EFF2ABD73A900C3F983 /* LaunchScreen.storyboard */; };
+		CA2D06C62AC0100A0061E64F /* 광고배너.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06C52AC0100A0061E64F /* 광고배너.png */; };
+		CA2D06C82AC01C090061E64F /* 아이콘 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06C72AC01C090061E64F /* 아이콘 1.png */; };
+		CA2D06CA2AC01CDA0061E64F /* 아이콘 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06C92AC01CDA0061E64F /* 아이콘 2.png */; };
+		CA2D06CC2AC01E750061E64F /* 아이콘 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06CB2AC01E750061E64F /* 아이콘 4.png */; };
+		CA2D06CE2AC01EA20061E64F /* 아이콘5.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06CD2AC01EA20061E64F /* 아이콘5.png */; };
+		CA2D06D92AC020060061E64F /* 동그라미 7.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06CF2AC020050061E64F /* 동그라미 7.png */; };
+		CA2D06DA2AC020060061E64F /* 동그라미 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06D02AC020050061E64F /* 동그라미 3.png */; };
+		CA2D06DB2AC020060061E64F /* 동그라미 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06D12AC020050061E64F /* 동그라미 2.png */; };
+		CA2D06DC2AC020060061E64F /* 동그라미 1png.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06D22AC020050061E64F /* 동그라미 1png.png */; };
+		CA2D06DD2AC020060061E64F /* 동그라미 9.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06D32AC020050061E64F /* 동그라미 9.png */; };
+		CA2D06DE2AC020060061E64F /* 동그라미 8.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06D42AC020050061E64F /* 동그라미 8.png */; };
+		CA2D06DF2AC020060061E64F /* 동그라미 6 .png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06D52AC020050061E64F /* 동그라미 6 .png */; };
+		CA2D06E02AC020060061E64F /* 동그라미 5.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06D62AC020050061E64F /* 동그라미 5.png */; };
+		CA2D06E12AC020060061E64F /* 동그라미 10.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06D72AC020050061E64F /* 동그라미 10.png */; };
+		CA2D06E22AC020060061E64F /* 동그라미 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06D82AC020050061E64F /* 동그라미 4.png */; };
+		CA2D06E62AC022760061E64F /* 맨 위 아이콘 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06E32AC022760061E64F /* 맨 위 아이콘 1.png */; };
+		CA2D06E72AC022760061E64F /* 맨 위 아이콘 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06E42AC022760061E64F /* 맨 위 아이콘 2.png */; };
+		CA2D06E82AC022760061E64F /* 맨 위 아이콘 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2D06E52AC022760061E64F /* 맨 위 아이콘 3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +42,24 @@
 		CA231EFD2ABD73A900C3F983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA231F002ABD73A900C3F983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA231F022ABD73A900C3F983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2D06C52AC0100A0061E64F /* 광고배너.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "광고배너.png"; sourceTree = "<group>"; };
+		CA2D06C72AC01C090061E64F /* 아이콘 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "아이콘 1.png"; sourceTree = "<group>"; };
+		CA2D06C92AC01CDA0061E64F /* 아이콘 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "아이콘 2.png"; sourceTree = "<group>"; };
+		CA2D06CB2AC01E750061E64F /* 아이콘 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "아이콘 4.png"; sourceTree = "<group>"; };
+		CA2D06CD2AC01EA20061E64F /* 아이콘5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "아이콘5.png"; sourceTree = "<group>"; };
+		CA2D06CF2AC020050061E64F /* 동그라미 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 7.png"; sourceTree = "<group>"; };
+		CA2D06D02AC020050061E64F /* 동그라미 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 3.png"; sourceTree = "<group>"; };
+		CA2D06D12AC020050061E64F /* 동그라미 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 2.png"; sourceTree = "<group>"; };
+		CA2D06D22AC020050061E64F /* 동그라미 1png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 1png.png"; sourceTree = "<group>"; };
+		CA2D06D32AC020050061E64F /* 동그라미 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 9.png"; sourceTree = "<group>"; };
+		CA2D06D42AC020050061E64F /* 동그라미 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 8.png"; sourceTree = "<group>"; };
+		CA2D06D52AC020050061E64F /* 동그라미 6 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 6 .png"; sourceTree = "<group>"; };
+		CA2D06D62AC020050061E64F /* 동그라미 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 5.png"; sourceTree = "<group>"; };
+		CA2D06D72AC020050061E64F /* 동그라미 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 10.png"; sourceTree = "<group>"; };
+		CA2D06D82AC020050061E64F /* 동그라미 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "동그라미 4.png"; sourceTree = "<group>"; };
+		CA2D06E32AC022760061E64F /* 맨 위 아이콘 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "맨 위 아이콘 1.png"; sourceTree = "<group>"; };
+		CA2D06E42AC022760061E64F /* 맨 위 아이콘 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "맨 위 아이콘 2.png"; sourceTree = "<group>"; };
+		CA2D06E52AC022760061E64F /* 맨 위 아이콘 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "맨 위 아이콘 3.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +98,24 @@
 				CA231EFA2ABD73A600C3F983 /* Main.storyboard */,
 				CA231EFD2ABD73A900C3F983 /* Assets.xcassets */,
 				CA231EFF2ABD73A900C3F983 /* LaunchScreen.storyboard */,
+				CA2D06C52AC0100A0061E64F /* 광고배너.png */,
+				CA2D06C72AC01C090061E64F /* 아이콘 1.png */,
+				CA2D06C92AC01CDA0061E64F /* 아이콘 2.png */,
+				CA2D06CB2AC01E750061E64F /* 아이콘 4.png */,
+				CA2D06CD2AC01EA20061E64F /* 아이콘5.png */,
+				CA2D06D22AC020050061E64F /* 동그라미 1png.png */,
+				CA2D06D12AC020050061E64F /* 동그라미 2.png */,
+				CA2D06D02AC020050061E64F /* 동그라미 3.png */,
+				CA2D06D82AC020050061E64F /* 동그라미 4.png */,
+				CA2D06D62AC020050061E64F /* 동그라미 5.png */,
+				CA2D06D52AC020050061E64F /* 동그라미 6 .png */,
+				CA2D06CF2AC020050061E64F /* 동그라미 7.png */,
+				CA2D06D42AC020050061E64F /* 동그라미 8.png */,
+				CA2D06D32AC020050061E64F /* 동그라미 9.png */,
+				CA2D06D72AC020050061E64F /* 동그라미 10.png */,
+				CA2D06E32AC022760061E64F /* 맨 위 아이콘 1.png */,
+				CA2D06E42AC022760061E64F /* 맨 위 아이콘 2.png */,
+				CA2D06E52AC022760061E64F /* 맨 위 아이콘 3.png */,
 				CA231F022ABD73A900C3F983 /* Info.plist */,
 			);
 			path = UmcProject;
@@ -125,9 +179,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2D06DE2AC020060061E64F /* 동그라미 8.png in Resources */,
+				CA2D06C82AC01C090061E64F /* 아이콘 1.png in Resources */,
+				CA2D06E82AC022760061E64F /* 맨 위 아이콘 3.png in Resources */,
+				CA2D06E22AC020060061E64F /* 동그라미 4.png in Resources */,
 				CA231F012ABD73A900C3F983 /* LaunchScreen.storyboard in Resources */,
+				CA2D06E02AC020060061E64F /* 동그라미 5.png in Resources */,
+				CA2D06DD2AC020060061E64F /* 동그라미 9.png in Resources */,
+				CA2D06D92AC020060061E64F /* 동그라미 7.png in Resources */,
+				CA2D06DC2AC020060061E64F /* 동그라미 1png.png in Resources */,
+				CA2D06DB2AC020060061E64F /* 동그라미 2.png in Resources */,
+				CA2D06E12AC020060061E64F /* 동그라미 10.png in Resources */,
+				CA2D06DA2AC020060061E64F /* 동그라미 3.png in Resources */,
+				CA2D06E72AC022760061E64F /* 맨 위 아이콘 2.png in Resources */,
+				CA2D06CC2AC01E750061E64F /* 아이콘 4.png in Resources */,
+				CA2D06CE2AC01EA20061E64F /* 아이콘5.png in Resources */,
 				CA231EFE2ABD73A900C3F983 /* Assets.xcassets in Resources */,
 				CA231EFC2ABD73A600C3F983 /* Main.storyboard in Resources */,
+				CA2D06DF2AC020060061E64F /* 동그라미 6 .png in Resources */,
+				CA2D06C62AC0100A0061E64F /* 광고배너.png in Resources */,
+				CA2D06CA2AC01CDA0061E64F /* 아이콘 2.png in Resources */,
+				CA2D06E62AC022760061E64F /* 맨 위 아이콘 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

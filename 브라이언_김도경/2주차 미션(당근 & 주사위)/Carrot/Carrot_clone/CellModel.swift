@@ -27,7 +27,6 @@ class CellModel {
   
 }
 func generateRandomData() -> [CellModel] {
-    let imageNames = "AirpodMax"
     let titles = ["아이폰 XS 팝니다~", "맥북 프로 팝니다~", "갤럭시 S10 팝니다~", "아이패드 에어 팝니다~", "애플 워치 팝니다~"]
     let locations = ["서울 강남구", "부산 해운대구", "대구 중구", "인천 남동구", "광주 서구", "대전 유성구", "울산 남구"]
     

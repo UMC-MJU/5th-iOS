@@ -100,12 +100,14 @@ class CustomCollectionViewCell: UICollectionViewCell {
         
         //reserved
         if isReserved {
+            //예약중이라면 예약중 표시
             print("IsReserved")
             reserved.translatesAutoresizingMaskIntoConstraints = false
             reserved.centerYAnchor.constraint(equalTo: price.centerYAnchor).isActive = true
             reserved.leadingAnchor.constraint(equalTo: pic.trailingAnchor, constant: 15).isActive = true
             price.leadingAnchor.constraint(equalTo: reserved.trailingAnchor, constant: 5).isActive = true
         } else {
+            //표시하지 않고 가격을 왼쪽으로 땡겨서 표시
             price.leadingAnchor.constraint(equalTo: pic.trailingAnchor, constant: 15).isActive = true
         }
         

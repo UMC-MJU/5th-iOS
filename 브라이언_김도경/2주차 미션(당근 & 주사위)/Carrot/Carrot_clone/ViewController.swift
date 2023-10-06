@@ -46,7 +46,6 @@ class ViewController: UIViewController {
         //search
         search.tintColor = .black
         
-        
         //CollectionView
         attribute()
         layout()
@@ -66,6 +65,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //Horizontal View
         if indexPath.row == 1 {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Horizon", for: indexPath) as? HorizontalCollectionViewCell else { return UICollectionViewCell() }
             return cell
@@ -78,9 +78,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             cell.title.text = testArr[indexPath.row].title
             cell.price.text = toWon(num: testArr[indexPath.row].price)
             
-            
-            //cell.isReserved = testArr[indexPath.row].isReserved
-    
+            //예약중 상태 설정
+            cell.isReserved = testArr[indexPath.row].isReserved
             
             return cell
         }

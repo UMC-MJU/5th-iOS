@@ -7,53 +7,27 @@
 
 import UIKit
 
+struct dataModel {
+    var itemTitle: String = ""
+    var itemOption: String = ""
+    var itemCost: String = ""
+    var OptionName: String = ""
+    var image: UIImage = UIImage(named: "img_pizza") ?? UIImage()
+}
+
+var data = dataModel()
+
 class ViewController: UIViewController {
     
-
-    lazy var playStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.distribution = .fill
-        stackView.backgroundColor = .white
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.spacing = 0
-        return stackView
+   
+    
+    
+    lazy var playTableView: UITableView = {
+        let table = UITableView()
+        table.translatesAutoresizingMaskIntoConstraints = false
+        return table
     }()
     
-    lazy var mainView: UIScrollView = {
-        let scrollView = UIScrollView()
-        scrollView.backgroundColor = .lightGrayColor
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        return scrollView
-    }()
-    
-    lazy var pizzaImage: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "img_pizza"))
-        imageView.contentMode = .scaleToFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
-    
-    lazy var menuNameLabel: UILabel = {
-        let label = UILabel()
-        label.text = "[재주문1위] 바싹불고기피자"
-        label.backgroundColor = .white
-        label.numberOfLines = 0
-        label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    lazy var menuInfoLabel: UILabel = {
-        let label = UILabel()
-        label.text = "바싹 익힌 불고기의 풍미를 입안 가득 느낄 수 있는 자가제빵선명희피자의 야심작"
-        label.backgroundColor = .white
-        label.textColor = .gray
-        label.font = UIFont.systemFont(ofSize: 15)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
-        return label
-    }()
     
     lazy var bottomView: UIView = {
         let view = UIView()
@@ -89,74 +63,26 @@ class ViewController: UIViewController {
         return label
     }()
     
-    lazy var infoView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    lazy var nutritionLabel: UILabel = {
-        let label = UILabel()
-        label.backgroundColor = .lightGrayColor
-        label.text = "영양성분 및 알레르기성분 표시 보기"
-        label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 11)
-        label.layer.cornerRadius = 5
-        label.layer.masksToBounds = true
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
-        //스크롤뷰 추가
-        view.addSubview(mainView)
-        mainView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        mainView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        mainView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        mainView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -130).isActive = true
-        
-        //stackView 추가
-        mainView.addSubview(playStackView)
-        playStackView.topAnchor.constraint(equalTo: mainView.topAnchor).isActive = true
-        playStackView.leadingAnchor.constraint(equalTo: mainView.leadingAnchor).isActive = true
-        playStackView.trailingAnchor.constraint(equalTo: mainView.trailingAnchor).isActive = true
-        playStackView.bottomAnchor.constraint(equalTo: mainView.bottomAnchor).isActive = true
-        
-        //피자 이미지 추가
-        playStackView.addArrangedSubview(pizzaImage)
-        pizzaImage.widthAnchor.constraint(equalTo: mainView.widthAnchor).isActive = true
-        pizzaImage.heightAnchor.constraint(equalToConstant: 250).isActive = true
-        
-        
-        //메뉴 이름 추가
-        playStackView.addArrangedSubview(menuNameLabel)
-        menuNameLabel.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 15).isActive = true
-        
-        menuNameLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        
-        
-        //메뉴 설명 추가
-        playStackView.addArrangedSubview(menuInfoLabel)
-        menuInfoLabel.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 15).isActive = true
-        menuInfoLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        menuInfoLabel.widthAnchor.constraint(equalTo: mainView.widthAnchor).isActive = true
-        
-        //영양 성분 표시 보기 추가
-        playStackView.addArrangedSubview(infoView)
-        infoView.widthAnchor.constraint(equalTo: mainView.widthAnchor).isActive = true
-        infoView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        infoView.addSubview(nutritionLabel)
-        nutritionLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        nutritionLabel.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 20).isActive = true
-        
+        playTableView.delegate = self
+        playTableView.dataSource = self
+        playTableView.register(mainImgCell.self, forCellReuseIdentifier: mainImgCell.cellID)
+        playTableView.register(menuinfoCell.self, forCellReuseIdentifier: menuinfoCell.cellID)
+        playTableView.register(optionCell.self, forCellReuseIdentifier: optionCell.cellID)
+        playTableView.register(optionItemCell.self, forCellReuseIdentifier: optionItemCell.cellID)
+        // 테이블뷰 추가 ( 스크롤 영역 )
+        view.addSubview(playTableView)
+        playTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: -58).isActive = true
+        playTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        playTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        playTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -130).isActive = true
         
         //바텀뷰 추가
         view.addSubview(bottomView)
-        bottomView.topAnchor.constraint(equalTo: mainView.bottomAnchor
+        bottomView.topAnchor.constraint(equalTo: playTableView.bottomAnchor
         ).isActive = true
         bottomView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         bottomView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
@@ -183,9 +109,10 @@ class ViewController: UIViewController {
         // 화면 전환
         let secondViewController = SecondViewController()
         self.navigationController?.pushViewController(secondViewController, animated: true)
-       
+        
         
         print("test")
+        
     }
 
 }
@@ -200,7 +127,7 @@ class SecondViewController: UIViewController {
     lazy var backButton: UIButton = {
         let button = UIButton()
         button.setTitle("←", for: .normal)
-        button.backgroundColor = .yellow
+        button.backgroundColor = .white
         button.setTitleColor(.black, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -208,11 +135,11 @@ class SecondViewController: UIViewController {
     
     lazy var bottomView: UIView = {
         let view = UIView()
-        view.backgroundColor = .yellow
+        view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
+  
     lazy var completeButton: UIButton = {
         let button = UIButton()
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -221,11 +148,15 @@ class SecondViewController: UIViewController {
         button.setTitle("배달 주문하기", for: .normal)
         button.backgroundColor = .mainColor
         return button
+        
     }()
+    
+    let orderItemView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("changed")
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
         view.addSubview(backButton)
         backButton.topAnchor.constraint(equalTo: view.topAnchor,constant: 45).isActive = true
         backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
@@ -245,11 +176,146 @@ class SecondViewController: UIViewController {
         completeButton.heightAnchor.constraint(equalTo: bottomView.heightAnchor, multiplier: 0.4).isActive = true
         completeButton.centerXAnchor.constraint(equalTo: bottomView.centerXAnchor).isActive = true
         
+        //아이템 추가
+        
+        view.addSubview(orderItemView)
+        orderItemView.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        orderItemView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        orderItemView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        orderItemView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        orderItemView.backgroundColor = .white
+        orderItemView.translatesAutoresizingMaskIntoConstraints = false
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        optionLabel.translatesAutoresizingMaskIntoConstraints = false
+        costLabel.translatesAutoresizingMaskIntoConstraints = false
+        itemImage.translatesAutoresizingMaskIntoConstraints = false
+        
+        orderItemView.addSubview(titleLabel)
+        orderItemView.addSubview(optionLabel)
+        orderItemView.addSubview(costLabel)
+        orderItemView.addSubview(itemImage)
+        titleLabel.topAnchor.constraint(equalTo: orderItemView.topAnchor, constant: 40).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: orderItemView.leadingAnchor, constant: 15).isActive = true
+        titleLabel.text = data.itemTitle
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        itemImage.image = data.image
+        itemImage.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
+        itemImage.leadingAnchor.constraint(equalTo: orderItemView.leadingAnchor, constant: 15).isActive = true
+        itemImage.heightAnchor.constraint(equalToConstant: 70).isActive  = true
+        itemImage.widthAnchor.constraint(equalToConstant: 70).isActive = true
+        optionLabel.text = "・ " + data.OptionName + data.itemOption
+        optionLabel.textColor = .gray
+        optionLabel.leadingAnchor.constraint(equalTo: itemImage.trailingAnchor, constant: 10).isActive = true
+        optionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
+        costLabel.text = data.itemCost
+        costLabel.leadingAnchor.constraint(equalTo: itemImage.trailingAnchor, constant: 14).isActive = true
+        costLabel.topAnchor.constraint(equalTo: optionLabel.bottomAnchor, constant: 20).isActive = true
+        print(data)
+        
+        
     }
+    let titleLabel = UILabel()
+    let optionLabel = UILabel()
+    let costLabel = UILabel()
+    let itemImage = UIImageView()
     
     @objc func didTapBackButton() {
         let mainViewController = ViewController()
         self.navigationController?.pushViewController(mainViewController, animated: true)
         
+    }
+ 
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource{
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: mainImgCell.cellID, for: indexPath) as! mainImgCell
+            cell.profile.image = UIImage(named: "img_pizza")
+            cell.selectionStyle = .none
+            data.image=cell.profile.image ?? UIImage()
+            return cell
+        }
+        else if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: menuinfoCell.cellID, for: indexPath) as! menuinfoCell
+                cell.selectionStyle = .none
+            data.itemTitle = cell.name.text ?? ""
+            return cell
+        }
+        
+        else if indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: optionCell.cellID, for: indexPath) as! optionCell
+            data.OptionName = (cell.optionTitle.text ?? "" ) + " : "
+            return cell
+        }
+        
+        else if indexPath.row == 3{
+            let cell = tableView.dequeueReusableCell(withIdentifier: optionItemCell.cellID, for: indexPath) as! optionItemCell
+            data.itemOption = (cell.option.text ?? "") + " " + (cell.cost.text ?? "")
+            data.itemCost = cell.cost.text ?? ""
+            return cell
+        }
+        else if indexPath.row == 4{
+            let cell = tableView.dequeueReusableCell(withIdentifier: optionItemCell.cellID, for: indexPath) as! optionItemCell
+            cell.option.text = "L"
+            cell.cost.text = "23,000원"
+            cell.clickBtn.setImage(UIImage(named: "unchecked_btn"), for: .normal)
+            cell.checked = false
+            return cell
+        }
+        
+        else{
+            let cell = playTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
+            cell.textLabel?.text = "a"
+            return cell
+        }
+    }
+  
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 3 {
+            let cell = tableView.cellForRow(at: IndexPath(row:3, section: 0)) as? optionItemCell
+            let cell2 = tableView.cellForRow(at: IndexPath(row:4, section: 0)) as? optionItemCell
+            
+            cell?.clickBtn.setImage(UIImage(named: "clicked_btn"), for: .normal)
+            cell2?.clickBtn.setImage(UIImage(named: "unchecked_btn"), for: .normal)
+            let str = cell?.cost.text ?? "20000원"
+            let buttontitle = str + "담기"
+            orderButton.setTitle(buttontitle, for: .normal)
+            data.itemCost = cell?.cost.text ?? ""
+            data.itemOption = (cell?.option.text ?? "") + " " + (cell?.cost.text ?? "")
+        }
+        else if indexPath.row == 4 {
+            let cell = tableView.cellForRow(at: IndexPath(row:4, section: 0)) as? optionItemCell
+            let cell2 = tableView.cellForRow(at: IndexPath(row:3, section: 0)) as? optionItemCell
+            
+            cell?.clickBtn.setImage(UIImage(named: "clicked_btn"), for: .normal)
+            cell2?.clickBtn.setImage(UIImage(named: "unchecked_btn"), for: .normal)
+            let str = cell?.cost.text ?? "23000원"
+            let buttontitle = str + "담기"
+            orderButton.setTitle(buttontitle, for: .normal)
+            data.itemCost = cell?.cost.text ?? ""
+            data.itemOption = (cell?.option.text ?? "") + " " + (cell?.cost.text ?? "")
+        }
+        
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+        
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0{
+            return 250
+        }
+        else if indexPath.row == 1{
+            return 150
+        }
+        else if indexPath.row == 2{
+            return 70
+        }
+        else{
+            return 55 // 원하는 셀 높이로 설정
+        }
     }
 }

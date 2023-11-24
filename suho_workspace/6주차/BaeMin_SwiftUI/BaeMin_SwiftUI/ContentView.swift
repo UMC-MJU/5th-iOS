@@ -33,6 +33,7 @@ struct ContentView: View {
                         .background(Color.white)
                         .padding(20)
                     Spacer()
+                    
                 }
                 Image("adv2_image")
                     .resizable()

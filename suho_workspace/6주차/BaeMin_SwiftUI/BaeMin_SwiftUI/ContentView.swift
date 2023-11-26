@@ -226,3 +226,9 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+#Preview{
+    VStack{
+        ContentView()
+    }
+}

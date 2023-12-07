@@ -13,6 +13,7 @@
 		93176D372B2220470040037C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93176D362B2220470040037C /* Preview Assets.xcassets */; };
 		93176D3E2B22207A0040037C /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93176D3D2B22207A0040037C /* WeatherModel.swift */; };
 		93176D412B22215A0040037C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 93176D402B22215A0040037C /* Alamofire */; };
+		93A91B572B224719005B9BEF /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A91B562B224719005B9BEF /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		93176D332B2220470040037C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93176D362B2220470040037C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93176D3D2B22207A0040037C /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		93A91B562B224719005B9BEF /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				93176D2F2B2220440040037C /* OpenWeahter_SwiftUI_App.swift */,
 				93176D312B2220440040037C /* ContentView.swift */,
+				93A91B562B224719005B9BEF /* APIKey.swift */,
 				93176D3D2B22207A0040037C /* WeatherModel.swift */,
 				93176D332B2220470040037C /* Assets.xcassets */,
 				93176D352B2220470040037C /* Preview Content */,
@@ -150,6 +153,7 @@
 			files = (
 				93176D322B2220440040037C /* ContentView.swift in Sources */,
 				93176D3E2B22207A0040037C /* WeatherModel.swift in Sources */,
+				93A91B572B224719005B9BEF /* APIKey.swift in Sources */,
 				93176D302B2220440040037C /* OpenWeahter_SwiftUI_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

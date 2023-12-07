@@ -8,9 +8,6 @@
 import SwiftUI
 import Alamofire
 
-enum APIKey : String {
-    case key = "daa163156c001ce828030e61e7a76d12"
-}
 
 
 struct ContentView: View {
